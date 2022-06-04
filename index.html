@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisher Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid" style="height: 100vh;">
+        <div class="row h-100">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 my-auto">
+                <div class="jumbotron p-3">
+                    <h2 class="text-center">Fishers Game</h2>
+                    <hr class="my-3">
+                    <div class="row">
+                        <div class="col-4 my-auto">
+                            <div>Correct: <span id="correct-score">0</span></div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div id="first-box" class="col-6 text-center" style="border: 1px black solid;">
+                                    1st Fish
+                                </div>
+                                <div class="col-6 text-center" id="second-box" style="border: 1px black solid;">
+                                    2nd Fish
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 my-auto">
+                            <div class="text-right">Incorrect: <span id="incorrect-score">0</span></div>
+                        </div>
+                    </div>
+                    <hr class="my-3">
+                    <div id="fisher-area" class="row text-center">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col -md-3"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
