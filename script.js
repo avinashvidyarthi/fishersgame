@@ -51,14 +51,13 @@ const shuffleArray = (array) => {
 }
 
 const shuffledFishersArray = shuffleArray(fishersTypes);
-console.log(shuffledFishersArray);
 
 const renderBtns = () => {
     fisherArea.innerHTML = "";
     shuffledFishersArray.forEach(fisher => {
         fisherArea.innerHTML += `
-            <div class="col-3 my-2">
-                <button class="btn ${fisher.clicked ? "btn-secondary" : "btn-outline-secondary"}" type="button" ${fisher.clicked ? "disabled" : ""} onclick="fisherClicked(${fisher.id})"> <img src="./images/fish-icon.png" height="60%" width="60%" ></button>
+            <div class="col-3 col-md-2 my-2">
+                <button class="btn ${fisher.clicked ? "btn-secondary" : "btn-outline-secondary"} p-0" type="button" ${fisher.clicked ? "disabled" : ""} onclick="fisherClicked(${fisher.id})"> <img src="./images/fish-icon.png" height="60%" width="60%" ></button>
             </div>
         `
     });
@@ -105,7 +104,6 @@ const fisherClicked = (id) => {
         alert("Something went wrong!");
     }
     renderBtns();
-    console.log(shuffledFishersArray);
 }
 
 renderBtns();
